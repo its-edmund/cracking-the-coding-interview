@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class Q01_06_String_Compression_Test {
 
-    private _01_06_StringCompression s = new _01_06_StringCompression();
+    private Q01_06_String_Compression s = new Q01_06_String_Compression();
 
     @Test
     public void withOneSingleChar() {

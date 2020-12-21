@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Q01_07_Rotate_Matrix_Test {
 
-    private _01_07_RotateMatrix s = new _01_07_RotateMatrix();
+    private Q01_07_Rotate_Matrix s = new Q01_07_Rotate_Matrix();
 
     @Test
     public void withOneOne() {

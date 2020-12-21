@@ -6,7 +6,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class Q01_03_URLify_Test {
 
-    private _01_03_URLify s = new _01_03_URLify();
+    private Q01_03_URLify s = new Q01_03_URLify();
 
     @Test
     public void withNoSpace() {

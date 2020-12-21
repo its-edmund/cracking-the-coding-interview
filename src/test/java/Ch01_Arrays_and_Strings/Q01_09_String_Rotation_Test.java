@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Q01_09_String_Rotation_Test {
 
-    private _01_09_StringRotation s = new _01_09_StringRotation();
+    private Q01_09_String_Rotation s = new Q01_09_String_Rotation();
 
     @Test
     public void withEmpty() {

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Q01_05_One_Away_Test {
 
-    private _01_05_OneAway s = new _01_05_OneAway();
+    private Q01_05_One_Away s = new Q01_05_One_Away();
 
     @Test
     public void withEmpty() {
@@ -16,6 +16,7 @@ public class Q01_05_One_Away_Test {
 
     @Test
     public void withOneEmpty() {
+        System.out.println(s.isOneAway("", "b"));
         assertTrue(s.isOneAway("", "b"));
     }
 
@@ -26,6 +27,7 @@ public class Q01_05_One_Away_Test {
 
     @Test
     public void withOneInsertion() {
+        System.out.println(s.isOneAway("pae", "pale"));
         assertTrue(s.isOneAway("pae", "pale"));
     }
 

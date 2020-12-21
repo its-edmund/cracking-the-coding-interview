@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Q01_04_Palindrome_Permutation_Test {
 
-    private _01_04_PalindromePermutation s = new _01_04_PalindromePermutation();
+    private Q01_04_Palindrome_Permutation s = new Q01_04_Palindrome_Permutation();
 
     @Test
     public void withEmpty() {

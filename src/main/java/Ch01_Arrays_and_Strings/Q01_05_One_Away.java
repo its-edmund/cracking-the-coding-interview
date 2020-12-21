@@ -1,7 +1,7 @@
 package Ch01_Arrays_and_Strings;
 
 public class Q01_05_One_Away {
-    public static boolean oneAway(String str1, String str2) {
+    public boolean isOneAway(String str1, String str2) {
         if (str1.length() == str2.length()) {
             int changes = 0;
             for (int i = 0; i < str1.length(); i++) {
@@ -13,7 +13,7 @@ public class Q01_05_One_Away {
                     }
                 }
             }
-        } else if (str1.length() - str2.length() == 1) {
+        } else if (Math.abs(str1.length() - str2.length()) == 1) {
             int p1 = 0;
             int p2 = 0;
             while (p1 < str1.length() && p2 < str2.length()) {
@@ -36,12 +36,5 @@ public class Q01_05_One_Away {
             return false;
         }
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(oneAway("pale", "ple"));
-        System.out.println(oneAway("pales", "pale"));
-        System.out.println(oneAway("pale", "bale"));
-        System.out.println(oneAway("pale", "bake"));
     }
 }

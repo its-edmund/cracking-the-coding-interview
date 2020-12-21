@@ -12,26 +12,22 @@ public class Q01_06_String_Compression {
 
     // TODO: USE STRINGBUILDER
 
-    public static String strComp(String str) {
+    public String compress(String str) {
         String ans = "";
         char currChar = str.charAt(0);
         int count = 0;
         for (char c : str.toCharArray()) {
             if (c != currChar) {
-                ans += currChar + Integer.toString(count);
+                ans += Integer.toString(count) + currChar;
                 currChar = c;
                 count = 1;
             } else {
                 count++;
             }
         }
-        ans += currChar + Integer.toString(count);
+        ans += Integer.toString(count) + currChar;
         // Forgot to check for length
         // return ans;
         return ans.length() < str.length() ? ans : str;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(strComp("aabcccccaaa"));
     }
 }

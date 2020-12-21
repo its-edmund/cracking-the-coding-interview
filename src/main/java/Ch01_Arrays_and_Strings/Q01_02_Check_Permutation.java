@@ -3,7 +3,7 @@ package Ch01_Arrays_and_Strings;
 import java.util.*;
 
 public class Q01_02_Check_Permutation {
-    public static boolean check(String str1, String str2) {
+    public boolean check(String str1, String str2) {
         HashMap<Character, Integer> freq1 = new HashMap<>();
         HashMap<Character, Integer> freq2 = new HashMap<>();
         for (int i = 0; i < str1.length(); i++) {
