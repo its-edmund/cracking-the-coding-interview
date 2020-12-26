@@ -4,26 +4,22 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class Q03_06_Animal_Shelter {
-    LinkedList<ArrayList> shelter = new LinkedList<>();
+    LinkedList<Animal> shelter = new LinkedList<>();
 
     public void enqueueDog(int i) {
-        ArrayList entry = new ArrayList();
-        entry.add(i);
-        entry.add("dog");
+        Animal entry = new Animal("dog", i);
         shelter.addLast(entry);
     }
 
     public void enqueueCat(int i) {
-        ArrayList entry = new ArrayList();
-        entry.add(i);
-        entry.add("cat");
+        Animal entry = new Animal("cat", i);
         shelter.addLast(entry);
     }
 
     public int dequeueCat() {
         for(int i = 0; i < shelter.size(); i++) {
-            if(shelter.get(i).get(1) == "cat") {
-                int num = (int) shelter.get(i).get(0);
+            if(shelter.get(i).getType() == "cat") {
+                int num = (int) shelter.get(i).getVal();
                 shelter.remove(i);
                 return num;
             }
@@ -33,8 +29,8 @@ public class Q03_06_Animal_Shelter {
 
     public int dequeueDog() {
         for(int i = 0; i < shelter.size(); i++) {
-            if(shelter.get(i).get(1) == "dog") {
-                int num = (int) shelter.get(i).get(0);
+            if(shelter.get(i).getType() == "dog") {
+                int num = (int) shelter.get(i).getVal();
                 shelter.remove(i);
                 return num;
             }
@@ -43,6 +39,24 @@ public class Q03_06_Animal_Shelter {
     }
 
     public int dequeueAny() {
-        return (int) shelter.pop().get(0);
+        return (int) shelter.pop().getVal();
+    }
+}
+
+class Animal {
+    String type;
+    int val;
+
+    public Animal(String type, int val) {
+        this.type = type;
+        this.val = val;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getVal() {
+        return val;
     }
 }
