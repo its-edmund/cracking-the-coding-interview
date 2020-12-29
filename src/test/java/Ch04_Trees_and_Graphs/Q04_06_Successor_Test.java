@@ -5,9 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
-public class _04_06_SuccessorTest {
+public class Q04_06_Successor_Test {
 
-    private _04_06_Successor s = new _04_06_Successor();
+    private Q04_06_Successor s = new Q04_06_Successor();
 
     @Test
     public void withOneNode() {
