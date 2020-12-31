@@ -8,10 +8,10 @@ import java.util.Collections;
 
 import static org.junit.Assert.assertEquals;
 
-public class _08_02_RobotInAGridTest {
+public class Q08_02_Robot_in_a_Grid_Test {
 
 
-    private _08_02_RobotInAGrid s = new _08_02_RobotInAGrid();
+    private Q08_02_Robot_in_a_Grid s = new Q08_02_Robot_in_a_Grid();
 
     @Test
     public void withAllFeasibleCells() {
