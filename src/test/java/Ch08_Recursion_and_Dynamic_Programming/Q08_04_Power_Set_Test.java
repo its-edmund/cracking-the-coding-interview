@@ -9,9 +9,9 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
-public class _08_04_PowerSetTest {
+public class Q08_04_Power_Set_Test {
 
-    private _08_04_PowerSet s = new _08_04_PowerSet();
+    private Q08_04_Power_Set s = new Q08_04_Power_Set();
 
     @Test
     public void withEmptySet() {

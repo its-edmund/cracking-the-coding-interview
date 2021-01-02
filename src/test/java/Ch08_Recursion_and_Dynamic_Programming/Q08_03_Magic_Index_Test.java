@@ -4,9 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class _08_03_MagicIndexTest {
+public class Q08_03_Magic_Index_Test {
 
-    private _08_03_MagicIndex s = new _08_03_MagicIndex();
+    private Q08_03_Magic_Index s = new Q08_03_Magic_Index();     
 
     @Test
     public void withOneElement() {
